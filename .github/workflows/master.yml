@@ -26,4 +26,8 @@ jobs:
         make
         cd ..
         
+        ln -s /opt/X11/include/X11 /usr/local/include/X11
+        export CFLAGS=-I/opt/X11/include
+        xcode-select --install
+        
         pip install ueberzug
