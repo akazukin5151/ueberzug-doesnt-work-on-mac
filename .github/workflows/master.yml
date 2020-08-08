@@ -20,8 +20,6 @@ jobs:
     - name: Install dependencies
       run: |
         brew cask install xquartz
-        
-        ln -s /opt/X11/include/X11 /usr/local/include/X11
-        export CFLAGS=-I/opt/X11/include
+        brew install feh
         
         pip install ueberzug
