@@ -20,6 +20,6 @@ jobs:
     - name: Install dependencies
       run: |
         brew cask install xquartz
-        brew install feh
+        brew tap homebrew/cask && brew cask install gimp
         
         pip install ueberzug
