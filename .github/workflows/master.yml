@@ -20,6 +20,10 @@ jobs:
     - name: Install dependencies
       run: |
         brew cask install xquartz
-        brew tap homebrew/cask && brew cask install gimp
+
+        git clone https://git.finalrewind.org/feh
+        cd feh        
+        make
+        sudo make install
         
         pip install ueberzug
